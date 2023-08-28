@@ -1,0 +1,11 @@
+.formContainer {
+    display: flex;
+    padding: 30px;
+    width: 500px;
+    margin: 0 auto;
+    gap: 12px;
+}
+
+.addTask {
+    width: 100%;
+}

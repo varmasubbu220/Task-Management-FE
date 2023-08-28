@@ -1,0 +1,123 @@
+body {
+  background-color: aliceblue;
+}
+
+.title {
+  display: flex;
+  justify-content: center;
+  color: #444487;
+}
+
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+.login-container {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  gap: 18px;
+  width: 500px;
+  margin: 0 auto;
+  margin-top: 200px;
+}
+
+input[type="text"], input[type="password"] {
+  appearance: none;
+  border: none;
+  outline: none;
+  background-color: white;
+  
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 4px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s ease;
+}
+
+
+input[type="text"]:hover {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+
+input[type="text"]:focus {
+  border: 1px solid #444487; 
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1), 0 0 0 4px rgba(25, 118, 210, 0.1);
+}
+
+
+button {
+  appearance: none;
+  border: none;
+  outline: none;
+  background-color: #444487; 
+  color: white;
+  padding: 10px 20px;
+  font-size: 16px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+
+button:hover {
+  background-color: #1565c0; 
+}
+
+
+button:focus {
+  box-shadow: 0 0 0 3px rgba(25, 118, 210, 0.3);
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+.taskItem {
+  opacity: 0; 
+  transition: opacity 0.5s ease; 
+}
+
+.taskItem.fade-in {
+  opacity: 1; 
+}
+
+.loading {
+  display: flex;
+  height: 600px;
+  justify-content: center;
+  align-items: center;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}

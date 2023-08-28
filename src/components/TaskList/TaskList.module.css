@@ -1,0 +1,35 @@
+.taskList {
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    align-items: flex-start;
+    transition: opacity 0.5s ease, transform 0.5s ease; 
+}
+
+.inCompleteTasks, .completedTasks {
+    display: flex;
+    flex-direction: column;
+    min-width: 45%;
+    background-color: white;
+    opacity: 1; /* Set initial opacity to 1 */
+    transform: translateY(0); /* Set initial transform to 0 */
+    transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.header {
+    display: flex;
+    justify-content: center;
+    font-size: 22px;
+    font-weight: bold;
+    padding: 17px;
+    background: #444487;
+    color: white;
+}
+
+.placeholder {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 61px;
+    color: gray;
+}

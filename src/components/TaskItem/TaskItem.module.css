@@ -1,0 +1,32 @@
+.task {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid rgb(222, 221, 255);
+    padding: 0 20px;
+    height: 60px;
+    gap: 10px;
+}
+
+.isEditing {
+    background:#d9d9f9
+}
+
+.task > input {
+    width: 100%;
+}
+
+.task-item {
+    opacity: 0; 
+    transition: opacity 0.5s ease; 
+}
+
+.task-item.fade-in {
+    opacity: 1; 
+}
+
+.actions {
+    display: flex;
+    gap: 5px;
+    align-items: center;
+}
