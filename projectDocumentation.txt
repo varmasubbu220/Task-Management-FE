@@ -1,0 +1,67 @@
+
+            Task manamgement web application
+
+Task management web application built using React for the front-end and Node.js for the back-end. 
+It allows users to create, edit ,read, update, and delete tasks. Users can also mark tasks as completed.
+When user marks as completed ,it toggels from right to left.
+ 
+ ====Application-contains=========
+
+*User authentication with a login page.
+*Crud operations.
+*Home page displaying a list of tasks.
+*Add new tasks using a form with title and description.
+*Mark tasks as completed with visual differentiation.
+*Add ,Edit and delete tasks.
+*RESTful APIs for CRUD operations on tasks.
+*Validation and error handling for API requests.
+*api call on every operation.
+================How to Use=========
+*enter random email and pasword (format of email and password contains Abcd@123 format)
+* click on login
+*The main webpage appear
+* There is a inputs for title and description 
+*The title will be less that 30 characters and description is below 100 characters
+* after giving inputs click on Add .
+* The list will be added 
+*Now you can  mark as complete and also un mark it.
+*And also you can able to edit and Delete list..
+=========================================================
+
+============ How to Run in Locale ============================
+=>To run this project, you'll need
+        * Node.js (Download and install from https://nodejs.org/)
+
+===>open terminal
+==>git clone "https://github.com/varmasubbu220/Task-Management-Application.git"
+
+==> Enter cd task-management-app
+cd ./backend/
+run   * npm install -i
+run  * npm start or nodemon app.js
+
+==>go to frontend folder On another teminal
+
+cd ./frontend/
+run   * npm install -i
+run *npm start
+
+front-end :http://localhost:3000/
+backend : http://localhost:8080
+
+============================ CRUD Api "s used ==============================
+
+GET /api/tasks - Get all tasks.
+GET /api/tasks/:taskId - Get task by ID.
+POST /api/tasks - Create a new task.
+PUT /api/tasks/:taskId - Update task.
+DELETE /api/tasks/:taskId - Delete task.
+
+
+
+====================THANK-Q ===============================
+For Any Queries
+name: Subhash Varma.
+mail : subhashvarma220@gmail.com
+ 
+
